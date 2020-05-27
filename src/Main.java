@@ -63,11 +63,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i < 11; i++) {
-            Movie movie = randomMovie();
-            System.out.println("Movie #" + i + " : " +movie.getName() + "\n" + " Plot: " + movie.plot() + "\n" );
-
-        }
+//        for (int i = 1; i < 11; i++) {
+//            Movie movie = randomMovie();
+//            System.out.println("Movie #" + i + " : " +movie.getName() + "\n" + " Plot: " + movie.plot() + "\n" );
+//        }
+        BMW bmw = new BMW();
+        System.out.println(bmw.startEngine());
+        System.out.println(bmw.accelerate());
+        System.out.println(bmw.brake());
+        System.out.println("Name fo the car: "+bmw.getName());
+        System.out.println("No of Cylinders: "+bmw.getCylinders()+"\n");
+        Mercedes mercedes = new Mercedes();
+        System.out.println(mercedes.startEngine());
+        System.out.println(mercedes.accelerate());
+        System.out.println(mercedes.brake());
+        System.out.println("Name fo the car: "+mercedes.getName());
+        System.out.println("No of Cylinders: "+mercedes.getCylinders());
     }
     public static Movie randomMovie(){
         int randomNumber = (int) (Math.random()*5)+1;
